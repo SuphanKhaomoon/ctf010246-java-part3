@@ -4,32 +4,18 @@ public class Employee
 {
 	public String firstname;
 	public String lastname;
+	public String position;
 	private int salary;
 
 	public static void main (String[] args) {
-// 10. 3 - Lab 3: New Class
-//	- ทดลองสร้าง Array จาก Class Employee
-		Employee[] employees = new Employee[3];
-		for (int i = 0; i < employees.length; i++)
-		{
-			employees[i] = new Employee("Firstname " + i, "Lastname " + i, 10000 * (i + 1));
-		}
-		System.out.println(employees[0].firstname);
-		System.out.println(employees[1].firstname);
-		System.out.println(employees[2].firstname);
-		System.out.println(employees[0].lastname);
-		System.out.println(employees[1].lastname);
-		System.out.println(employees[2].lastname);
-		System.out.println(employees[0].salary);
-		System.out.println(employees[1].salary);
-		System.out.println(employees[2].salary);
 
 	}
 	
+//	ทดลอง Constructor Overloading
 	public Employee () {
 		this.firstname = "Anonymous";
 		this.lastname = "Anonymous";
-//		this.position = "Anonymous";
+		this.position = "Anonymous";
 		this.salary = 9000;
 	}
 	
@@ -45,12 +31,12 @@ public class Employee
 		this.salary = salaryInput;
 	}
 	
-//	public Employee (String firstnameInput, String lastnameInput, int salaryInput, String positionInput) {
-//		this.firstname = firstnameInput;
-//		this.lastname = lastnameInput;
-//		this.salary = salaryInput;
-//		this.position = positionInput;
-//	}
+	public Employee (String firstnameInput, String lastnameInput, int salaryInput, String positionInput) {
+		this.firstname = firstnameInput;
+		this.lastname = lastnameInput;
+		this.salary = salaryInput;
+		this.position = positionInput;
+	}
 	
 	public void hello () {
 		System.out.println("Hello " + firstname);
