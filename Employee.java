@@ -29,7 +29,6 @@ public class Employee
 	public Employee () {
 		this.firstname = "Anonymous";
 		this.lastname = "Anonymous";
-//		this.position = "Anonymous";
 		this.salary = 9000;
 	}
 	
@@ -44,13 +43,6 @@ public class Employee
 		this.lastname = lastnameInput;
 		this.salary = salaryInput;
 	}
-	
-//	public Employee (String firstnameInput, String lastnameInput, int salaryInput, String positionInput) {
-//		this.firstname = firstnameInput;
-//		this.lastname = lastnameInput;
-//		this.salary = salaryInput;
-//		this.position = positionInput;
-//	}
 	
 	public void hello () {
 		System.out.println("Hello " + firstname);
